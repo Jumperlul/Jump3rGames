@@ -7,12 +7,6 @@
     <title>Jump3r Games - Remastered</title>
 	<link rel="icon" type="image/x-icon" href="jump3rlogo.png">
 	<style>
-	
-	  .heading {
-	    font-family: Arial;
-		color: white;
-		margin-bottom: 25px;
-	  }
 	  
 	  .flexbox-container {
 	    display: flex;
@@ -66,27 +60,77 @@
 	  .yt:hover {
 	    opacity: 0.8;
 	  }
-	  
-	  .footer {
-	    background-color: cyan;
-	  }
-	  
-	  .copyright {
-	    margin-top: 100px;
-		color: white;
-	  }
 
 	body {
 	  background: rgb(2,0,36);
 	  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(17,158,244,1) 0%, rgba(28,0,209,1) 100%);
+	  margin: 0px;
+	  padding: 0px;
 	}
+
+	li, a, button {
+        font-family: Arial;
+        font-size: 16px;
+        text-decoration: none;
+        color: White;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        background-color: #2a52c9;
+        position: fixed;
+        width: 80%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        cursor: pointer;
+    }
+
+    .nav_links {
+        list-style: none;
+    }
+
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav_links li a:hover {
+        color: blue;
+    }
+
+    button {
+        padding: 9px 25px;
+        background-color: rgba(0,136,169,1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }	
 	  
 	</style>
   </head>
   
   <body>
-    <h1 class="heading" align="center">Jump3r Games</h1>
-	<h2 class="heading" align="center">The official site for all Jump3r Games</h2>
+	    <header>
+	        <img class="logo" src="j3rbiglogo.png" alt="logo">
+	        <nav>
+	            <ul class="nav_links">
+	                <li><a href="#">About</a></li>
+	                <li><a href="#">Update Info</a></li>
+	            </ul>
+	        </nav>
+	        <a class="cta" href="#"><button>Contact</button></a>
+	    </header>
 	<div class="flexbox-container">
 	  <div class="flexbox-item">
 	    <button class="akibtn" onclick="window.location.href='smileyclicker.html';">
@@ -136,7 +180,6 @@
 	  </button>
 	  </div>
 	</div>
-	<h3 class="copyright" align="center">Jump3r Games © 2023</h3>
   </body>
 
 </html>
